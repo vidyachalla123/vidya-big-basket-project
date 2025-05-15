@@ -1,0 +1,131 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* Ensures it doesn’t overflow horizontally */
+  width: 100%;
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand */
+.navbar-left .brand {
+  font-size: 1.5rem;
+  color: white;
+  white-space: nowrap; /* Prevent title from wrapping */
+  cursor: pointer;
+}
+
+/* Right side wrapper */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  background-color: #388E3C;
+}
+
+/* Hamburger - visible only on mobile */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #4CAF50;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-right {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.welcome-text {
+  font-weight: 500;
+  color: #f0e913;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+
+
+

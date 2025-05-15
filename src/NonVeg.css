@@ -1,0 +1,136 @@
+/* Full page wrapper */
+.nonveg-fullscreen-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f4f1; /* Light beige background */
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.nonveg-container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 100px 40px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Page title */
+.nonveg-page-title {
+  font-size: 2.2rem;
+  color: #b5392c; /* Dark red for a bold non-veg theme */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Product list */
+.nonveg-product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual product card */
+.nonveg-product-card {
+  background-color: #fff8f2; /* Soft off-white with a hint of red */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.nonveg-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image */
+.nonveg-product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product info */
+.nonveg-product-info {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.nonveg-product-name {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #4c4c4c; /* Dark gray for text contrast */
+}
+
+.nonveg-product-price {
+  font-size: 1rem;
+  color: #7f7f7f; /* Light gray for price text */
+}
+
+.nonveg-product-description {
+  font-size: 0.95rem;
+  color: #8f8f8f; /* Muted gray for description */
+  margin-top: 8px;
+}
+
+/* Add to cart button */
+.nonveg-add-cart-button {
+  background-color: #e53935; /* Red shade for Non-Veg products */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.nonveg-add-cart-button:hover {
+  background-color: #c62828; /* Darker red when hovered */
+}
+
+/* Pagination buttons */
+.nonveg-pagination-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nonveg-page-button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #e0e0e0; /* Light gray background for pagination */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.nonveg-page-button:hover:not(.active):not(:disabled) {
+  background-color: #c1c1c1; /* Darker gray for hover effect */
+}
+
+.nonveg-page-button.active {
+  background-color: #b5392c; /* Dark red for active page */
+  color: white;
+}
+
+.nonveg-page-button:disabled {
+  background-color: #f1f1f1; /* Light disabled button */
+  color: #bdbdbd; /* Light gray text for disabled button */
+  cursor: not-allowed;
+}

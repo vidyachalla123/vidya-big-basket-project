@@ -1,0 +1,36 @@
+/* Full width and height layout */
+.notfound-container {
+  width: 100%;
+  background: linear-gradient(135deg, #f44336, #e57373);
+  color: rgb(241, 236, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.notfound-container h1 {
+  font-size: 100px;
+  margin: 0;
+  animation: pop-in 1s ease;
+}
+
+.notfound-container p {
+  font-size: 20px;
+  margin: 10px 0;
+  animation: fade-in 1.5s ease;
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

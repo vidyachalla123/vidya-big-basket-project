@@ -1,0 +1,139 @@
+/* Full page wrapper */
+.milk-fullscreen-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #e6f2ff; /* light blue background */
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.milk-container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 100px 40px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Page title */
+.milk-page-title {
+  font-size: 2.2rem;
+  color: #0059b3; /* deeper blue */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Product list */
+.milk-product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual product card */
+.milk-product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 85, 170, 0.15); /* subtle blue shadow */
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.milk-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 85, 170, 0.25);
+}
+
+/* Product image */
+.milk-product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product info */
+.milk-product-info {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.milk-product-name {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #003366; /* navy blue */
+}
+
+.milk-product-price {
+  font-size: 1rem;
+  color: #336699;
+}
+
+/* Product description */
+.milk-product-description {
+  font-size: 0.95rem;
+  color: #5a5a5a;
+  margin-top: 8px;
+}
+
+/* Add to cart button */
+.milk-add-cart-button {
+  background-color: #3399ff; /* sky blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.milk-add-cart-button:hover {
+  background-color: #1a75ff; /* stronger blue */
+}
+
+/* Pagination buttons */
+.milk-pagination-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.milk-page-button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #cce6ff;
+  color: #003366;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.milk-page-button:hover:not(.active):not(:disabled) {
+  background-color: #99ccff;
+}
+
+.milk-page-button.active {
+  background-color: #0059b3;
+  color: white;
+}
+
+.milk-page-button:disabled {
+  background-color: #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+}

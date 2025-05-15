@@ -1,0 +1,33 @@
+.orders-container {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.order-card {
+  border: 2px dashed #f39c12;
+  background-color: #fff8e1;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #f1c40f;
+  transition: transform 0.3s;
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+}
