@@ -8,7 +8,7 @@ function Home() {
       {/* Hero Section */}
       <div className="hero-section">
         <h1 className="main-heading">
-          Welcome to Big-Basket clone 🛒
+          Welcome to V-MART 🛒
         </h1>
         <p className="sub-text">
           Your trusted destination for groceries, essentials, and everyday products at the best prices!
