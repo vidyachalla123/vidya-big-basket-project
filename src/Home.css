@@ -9,8 +9,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #e0f7fa, #e1bee7);
-  color: #333;
+  background: linear-gradient(to right, #134b7b, #e1bee7);
+  color: #667021;
   line-height: 1.6;
   margin: 50px 0px 0px 0px;
 }
@@ -32,7 +32,7 @@ body {
   text-align: center;
   padding: 100px 20px 60px;
   background: linear-gradient(to right, #2c5f43, aquamarine);
-  color: white;
+  color: rgb(15, 110, 24);
   border-radius: 16px;
   margin-bottom: 40px;
   width: 100%;

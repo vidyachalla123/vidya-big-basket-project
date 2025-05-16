@@ -39,11 +39,17 @@ function Home() {
             <img src="/images/vegetables.webp" alt="Vegetables" className="category-image" />
             <h3>Vegetables</h3>
           </Link>
+          <Link to="/Veg">
+            <button className="visit-button green">Visit</button>
+          </Link>
         </div>
         <div className="category-card">
           <Link to="/NonVeg">
             <img src="/images/nonvegetables.jpg" alt="Non-Veg" className="category-image" />
             <h3>Non-Veg</h3>
+          </Link>
+          <Link to="/NonVeg">
+            <button className="visit-button red">Visit</button>
           </Link>
         </div>
         <div className="category-card">
@@ -51,11 +57,17 @@ function Home() {
             <img src="/images/milkproducts.jpg" alt="Milk" className="category-image" />
             <h3>Milk</h3>
           </Link>
+          <Link to="/Milk">
+            <button className="visit-button blue">Visit</button>
+          </Link>
         </div>
         <div className="category-card">
           <Link to="/Chocolate">
             <img src="/images/chocolates.jpg" alt="Chocolate" className="category-image" />
             <h3>Chocolates</h3>
+          </Link>
+          <Link to="/Chocolate">
+            <button className="visit-button purple">Visit</button>
           </Link>
         </div>
       </div>
