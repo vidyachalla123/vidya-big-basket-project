@@ -50,7 +50,7 @@ function App() {
         <nav className="navbar">
           <div className="navbar-left">
             <span className="brand">
-              🛒 <strong>BigBasket</strong>
+              🛒 <strong>RatanBasket</strong>
             </span>
           </div>
 
