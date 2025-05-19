@@ -56,6 +56,19 @@ const productSlice = createSlice({
             { name: 'Toblerone (Mini)', price: 100.0, image: '/images/chocolate/toblerone.jpg', description: 'Swiss chocolate with honey and almond nougat.' },
             { name: 'Amul Dark Chocolate (150g)', price: 85.0, image: '/images/chocolate/amuldarkchocolate.jpeg', description: 'Bittersweet dark chocolate with a rich cocoa taste.' }
         ],
+    alcohol: [
+              { name: 'Kingfisher Beer', price: 210.00, image: '/images/alcohol/kingfisher.jpeg', description: 'A crisp and refreshing lager, perfect for casual evenings.' },
+              { name: 'Budweiser Beer', price: 250.00, image: '/images/alcohol/budwiser.jpeg', description: 'Smooth American lager with a clean finish and subtle hop aroma.' },
+              { name: 'Knockout Beer', price: 200.00, image: '/images/alcohol/knockout.jpeg', description: 'Strong Indian beer with bold flavor and higher alcohol content.' },
+              { name: 'Royal Stag Whisky', price: 1350.00, image: '/images/alcohol/royalstage.jpeg', description: 'A blend of fine grain spirits and Scotch malts, smooth and affordable.' },
+              { name: 'Blenders Pride Whisky', price: 1450.00, image: '/images/alcohol/blenderspride.jpeg', description: 'Premium Indian whisky with a refined taste and mellow finish.' },
+              { name: 'Manssionhouse', price: 220.00, image: '/images/alcohol/manssionhouse.jpeg', description: 'Popular brandy offering a warm aroma and full-bodied flavor.' },
+              { name: 'Signature Whisky', price: 850.00, image: '/images/alcohol/signature.jpg', description: 'Smooth whisky with smoky undertones and a rich finish.' },
+              { name: 'Imperial Blue Whisky', price: 950.00, image: '/images/alcohol/imperialblue.jpeg', description: 'A value-friendly whisky with a pleasant aroma and mild taste.' },
+              { name: 'Black Dog Reserve Scotch', price: 2500.00, image: '/images/alcohol/Blackdog.jpeg', description: 'Aged Scotch with a luxurious taste and elegant character.' },
+              { name: 'Redlabel', price: 10000.00, image: '/images/alcohol/redlabel.jpeg', description: 'A bold and smoky Scotch whisky for those who enjoy strong flavors.' }
+        ],
+
 
     },
     reducers: {}

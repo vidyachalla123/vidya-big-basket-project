@@ -7,6 +7,7 @@ import Veg from './Veg';
 import NonVeg from './NonVeg';
 import Milk from './Milk';
 import Chocolate from './Chocolate';
+import Alcohol from './Alcohol';
 import Cart from './Cart';
 import Orders from './Orders';
 import AboutUs from './AboutUs';
@@ -65,6 +66,7 @@ function App() {
               <Link to="/nonveg" onClick={() => setMenuOpen(false)}>🍗 NonvegItems</Link>
               <Link to="/milk" onClick={() => setMenuOpen(false)}>🥛 Milk</Link>
               <Link to="/chocolate" onClick={() => setMenuOpen(false)}>🍫 Chocolate</Link>
+              <Link to="/alcohol" onClick={() => setMenuOpen(false)}>🍺 Alcohol</Link>
               <Link to="/cart" onClick={() => setMenuOpen(false)}>🛒 Cart {totalCartCount}</Link>
               <Link to="/orders" onClick={() => setMenuOpen(false)}>📦 Orders</Link>
               <Link to="/about" onClick={() => setMenuOpen(false)}>ℹ️ About Us</Link>
@@ -93,6 +95,7 @@ function App() {
           <Route path='/nonveg' element={<NonVeg />} />
           <Route path='/milk' element={<Milk />} />
           <Route path='/chocolate' element={<Chocolate />} />
+          <Route path='/Alcohol' element={<Alcohol/>} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/about' element={<AboutUs />} />
