@@ -51,7 +51,7 @@ function App() {
         <nav className="navbar">
           <div className="navbar-left">
             <span className="brand">
-              🛒 <strong>RatanSirBasket</strong>
+              🛒 <strong>BigBasket</strong>
             </span>
           </div>
 
@@ -66,7 +66,7 @@ function App() {
               <Link to="/nonveg" onClick={() => setMenuOpen(false)}>🍗 NonvegItems</Link>
               <Link to="/milk" onClick={() => setMenuOpen(false)}>🥛 Milk</Link>
               <Link to="/chocolate" onClick={() => setMenuOpen(false)}>🍫 Chocolate</Link>
-              <Link to="/alcohol" onClick={() => setMenuOpen(false)}>🍺 Alcohol</Link>
+              <Link to="/Alcohol" onClick={() => setMenuOpen(false)}>🍺 Alcohol</Link>
               <Link to="/cart" onClick={() => setMenuOpen(false)}>🛒 Cart {totalCartCount}</Link>
               <Link to="/orders" onClick={() => setMenuOpen(false)}>📦 Orders</Link>
               <Link to="/about" onClick={() => setMenuOpen(false)}>ℹ️ About Us</Link>
