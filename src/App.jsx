@@ -19,7 +19,7 @@ import { logOutUser } from './store';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null);  // Reference to the nav-links div
+  const menuRef = useRef(null);
   const cartObjects = useSelector(globalState => globalState.cart);
   const totalCartCount = cartObjects.reduce((total, item) => total + item.quantity, 0);
 
@@ -28,18 +28,13 @@ function App() {
 
   const dispatch = useDispatch();
 
-  // Close menu if clicked outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setMenuOpen(false); // Close the menu if clicked outside
+        setMenuOpen(false);
       }
     };
-
-    // Add event listener for clicks outside the menu
     document.addEventListener('mousedown', handleClickOutside);
-
-    // Cleanup listener when component unmounts
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -66,7 +61,7 @@ function App() {
               <Link to="/nonveg" onClick={() => setMenuOpen(false)}>🍗 NonvegItems</Link>
               <Link to="/milk" onClick={() => setMenuOpen(false)}>🥛 Milk</Link>
               <Link to="/chocolate" onClick={() => setMenuOpen(false)}>🍫 Chocolate</Link>
-              <Link to="/Alcohol" onClick={() => setMenuOpen(false)}>🍺 Alcohol</Link>
+              <Link to="/alcohol" onClick={() => setMenuOpen(false)}>🍺 Alcohol</Link>
               <Link to="/cart" onClick={() => setMenuOpen(false)}>🛒 Cart {totalCartCount}</Link>
               <Link to="/orders" onClick={() => setMenuOpen(false)}>📦 Orders</Link>
               <Link to="/about" onClick={() => setMenuOpen(false)}>ℹ️ About Us</Link>
@@ -75,17 +70,19 @@ function App() {
                 {isAuthenticated ? (
                   <>
                     <span className="welcome-text">Welcome {currentUser.username}</span>
-                    <button className="logout-button" onClick={() => dispatch(logOutUser())}>Logout</button>
+                    <button className="logout-button" onClick={() => {
+                      dispatch(logOutUser());
+                      setMenuOpen(false);
+                    }}>
+                      Logout
+                    </button>
                   </>
                 ) : (
                   <Link className="signin-link" to="/signin" onClick={() => setMenuOpen(false)}>🔐 Sign In</Link>
                 )}
               </div>
-
-
             </div>
           </div>
-
         </nav>
 
         <Routes>
@@ -95,7 +92,7 @@ function App() {
           <Route path='/nonveg' element={<NonVeg />} />
           <Route path='/milk' element={<Milk />} />
           <Route path='/chocolate' element={<Chocolate />} />
-          <Route path='/Alcohol' element={<Alcohol/>} />
+          <Route path='/alcohol' element={<Alcohol />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/about' element={<AboutUs />} />
